@@ -55,7 +55,6 @@ export default function Index() {
   }
 
   useEffect(()=>{onSearch()}, []); //first "search" is blank, so we just bring a main page
-
   return (
     <Layout>
       <h1>Pelis Pelis</h1>
