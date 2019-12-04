@@ -2,10 +2,11 @@
 
 const MovieList = ({ movies }) => {
   return (
-    <>
-      <h2>Beer List</h2>
-        {movies.map(movie => <div key={movie.id} movie={movie} />)}
-    </>
+    <ul className="movieList">
+    {movies.map( (movie) => {
+        return <li>{movie} - {movie.id}</li>
+    })}
+  </ul>
   );
 };
 
